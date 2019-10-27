@@ -48,9 +48,8 @@ public class Main {
         }
     }
 
-    public static boolean insertcontact(Statement statement, String name, int phone, String email) throws SQLException{
+    public static void insertcontact(Statement statement, String name, int phone, String email) throws SQLException{
         statement.execute(String.format("INSERT INTO %s(%s,%s,%s) VALUES('%s',%d,'%s')",TABLE_NAME,
                     COLUMN_NAME, COLUMN_PHONE, COLUMN_EMAIL, name,phone,email));
-        return false;
     }
 }
