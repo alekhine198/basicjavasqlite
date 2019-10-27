@@ -1,0 +1,1 @@
+java file with basic sql commands. drop table first so the programm can be run several times, then creates the table and execute 2 updates commands. Run a executequery that returns a result set and then do a while loop to write to console each record.
